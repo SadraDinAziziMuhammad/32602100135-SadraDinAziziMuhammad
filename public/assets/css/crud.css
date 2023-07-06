@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    padding: 20px;
+    width: 100%;
+    background-color: tomato;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title,
+.table,
+.form {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 6px 24px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title a button {
+    background-color: rgb(74, 234, 74);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title a button:hover {
+    background-color: rgb(171, 241, 171);
+}
+
+.table table {
+    width: 100%;
+    font-size: 25px;
+}
+
+.table table tr th,
+.table table tr td {
+    padding: 5px;
+}
+
+.input {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 22px;
+}
+
+.input input {
+    width: 90%;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.button button {
+    background-color: rgb(31, 31, 221);
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 96%;
+    margin-top: 10px;
+}
+
+.btn-delete {
+    background-color: rgb(255, 35, 35);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-delete:hover {
+    background-color: rgb(255, 73, 73);
+}
+
+.btn-update {
+    background-color: rgb(35, 94, 255);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-update:hover {
+    background-color: rgb(80, 127, 255);
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}

@@ -37,6 +37,10 @@ $routes->get('/latihanview','HelloWorld::index');
 $routes->get('/layouting', 'LayoutController::index');
 $routes->get('/', 'Pages::profile');
 $routes->get('/skills', 'Pages::profile');
+$routes->get('/crud', 'Crud::index');
+$routes->get('/crud/tambah', 'Crud::tambah');
+$routes->get('/crud/hapus', 'Crud::hapus');
+$routes->get('/crud/edit', 'Crud::edit');
 
 
 
