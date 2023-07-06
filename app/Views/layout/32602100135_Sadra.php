@@ -35,6 +35,7 @@
     <?= $this->renderSection('content') ?>
     <style>
         /* app/Views/layout.css */
+/* app/Views/layout.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -43,7 +44,7 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #333;
   color: #fff;
   padding: 10px;
@@ -54,10 +55,11 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
 }
 
 .navbar ul li {
-  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .navbar ul li a {
@@ -65,20 +67,24 @@ body {
   text-decoration: none;
 }
 
+.navbar-sosmed {
+  margin-top: 10px;
+}
+
 .banner {
   background-color: #f2f2f2;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 .banner .name {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
 .banner .description {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
 }
 
@@ -94,6 +100,35 @@ body {
 
 .content p {
   color: #666;
+}
+
+@media (min-width: 600px) {
+  /* Styles for larger screens */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  .navbar ul li {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .navbar-sosmed {
+    margin-top: 0;
+  }
+
+  .banner .name {
+    font-size: 24px;
+  }
+
+  .banner .description {
+    font-size: 16px;
+  }
 }
 
     </style>

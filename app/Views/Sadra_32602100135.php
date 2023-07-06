@@ -39,14 +39,14 @@
     /* app/Views/layout/32602100135_Sadra.css */
 .about {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-us,
 .about-experience {
-  flex: 1;
   padding: 20px;
+  text-align: center;
 }
 
 .about-us h1,
@@ -73,7 +73,25 @@
 
 .about-experience-list td {
   text-align: left;
+  font-size: 14px;
 }
 
+@media (min-width: 600px) {
+  /* Styles for larger screens */
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about-us,
+  .about-experience {
+    flex: 1;
+  }
+
+  .about-experience-list td {
+    font-size: 16px;
+  }
+}
 </style>
 <?= $this->endSection()?>
