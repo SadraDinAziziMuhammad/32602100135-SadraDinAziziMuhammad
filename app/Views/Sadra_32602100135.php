@@ -77,6 +77,7 @@
   }
 
   @media (min-width: 600px) {
+
     /* Styles for larger screens */
     .about {
       flex-direction: row;

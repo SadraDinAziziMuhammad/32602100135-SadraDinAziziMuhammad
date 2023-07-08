@@ -20,8 +20,8 @@
                 <input type="text" name="prodi" id="prodi">
             </div>
             <div class="input">
-                <label for="univ">Universitas</label>
-                <input type="text" name="univ" id="univ">
+                <label for="universitas">Universitas</label>
+                <input type="text" name="universitas" id="universitas">
             </div>
             <div class="input">
                 <label for="no_hp">Nomor Handphone</label>

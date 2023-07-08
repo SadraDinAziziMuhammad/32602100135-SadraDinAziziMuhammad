@@ -7,9 +7,6 @@ body {
     padding: 2px;
 }
 
-h1 {
-}
-
 input[type="text"],
 input[type="number"] {
     width: 100%;

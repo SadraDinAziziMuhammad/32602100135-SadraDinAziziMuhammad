@@ -8,7 +8,12 @@ class Crud extends BaseController
 {
     public function index()
     {
-        return view('crud/view');
+        $all = $this->unissula->findAll();
+
+        $data = [
+            'mahasiswa' => $all
+        ];
+        return view('crud/view', $data);
     }
 
     public function tambah()
@@ -40,3 +45,4 @@ class Crud extends BaseController
         $this->unissula = new MahasiswaModel();
     }
 }
+?>
