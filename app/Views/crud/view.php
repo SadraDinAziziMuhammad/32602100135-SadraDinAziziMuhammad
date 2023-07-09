@@ -1,12 +1,10 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 
-<?php dd($mahasiswa) ?>
-
 <main>
-    <div class="title">
+    <div class="tittle">
         <h1>Data Mahasiswa</h1>
-        <a href="crud/tambah"><button>Tambah Data</button></a>
+        <a href="Crud/tambah"><button>Tambah Data</button></a>
     </div>
     <div class="table">
         <table border="1" cellspacing="0" cellpadding="10">
@@ -19,27 +17,28 @@
                 <th>No HP</th>
                 <th>Action</th>
             </tr>
+
             <?php
             if (empty($mahasiswa)) { ?>
                 <tr>
-                    <td colspan="7">Tidak ada data</td>
+                    <td collspan="7">Tidak ada data</td>
                 </tr>
                 <?php } else {
                 $i = 1;
                 foreach ($mahasiswa as $a) { ?>
                     <tr>
                         <td><?= $i++; ?></td>
-                        <td>Sadra</td>
+                        <td><?= $a['nama']; ?></td>
                         <td><?= $a['nim']; ?></td>
-                        <td>Teknik Informatika</td>
-                        <td>Unissula</td>
-                        <td>0895366976026</td>
+                        <td><?= $a['prodi']; ?></td>
+                        <td><?= $a['universitas']; ?></td>
+                        <td><?= $a['no_hp']; ?></td>
                         <td class="action">
-                            <a href="#"><button class="btn-delete">Delete</button></a>
-                            <a href="#"><button class="btn-update">Update</button></a>
+                            <a href="crud/hapus/<?= $a['nim']; ?>"><button class="btn-delete" onclick="return confirm('Are You Sure to Delete Nim <?= $a['nim'] ?>')">Delete</button></a>
+                            <a href="crud/edit/<?= $a['nim']; ?>"><button class="btn-update">Update</button></a>
                         </td>
                     </tr>
-            <?php }
+            <?php    }
             } ?>
         </table>
     </div>

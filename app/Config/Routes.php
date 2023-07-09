@@ -40,7 +40,8 @@ $routes->get('/skills', 'Pages::profile');
 $routes->get('/crud', 'Crud::index');
 $routes->get('/crud/tambah', 'Crud::tambah');
 $routes->get('/crud/hapus', 'Crud::hapus');
-$routes->get('/crud/edit', 'Crud::edit');
+$routes->get('/crud/edit/(:segment)', 'Crud::edit/$1');
+$routes->post('/crud/editan', 'Crud::editan');
 
 
 

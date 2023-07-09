@@ -2,7 +2,7 @@
 <?= $this->section('content'); ?>
 
 <main>
-    <div class="title">
+    <div class="tittle">
         <h1>Tambah Data Mahasiswa</h1>
     </div>
     <div class="form">
@@ -33,5 +33,4 @@
         </form>
     </div>
 </main>
-
 <?= $this->endSection(); ?>
