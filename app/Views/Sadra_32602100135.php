@@ -36,7 +36,7 @@
   /* app/Views/layout/32602100135_Sadra.css */
   /* app/Views/layout/32602100135_Sadra.css */
 .about {
-  display: flex;
+  display:block;
   flex-direction: column;
   align-items: center;
 }
