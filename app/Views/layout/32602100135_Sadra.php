@@ -14,12 +14,14 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #7D7463;
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #3F2305;
   color: #fff;
   padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar ul {
@@ -33,7 +35,7 @@
 }
 
 .navbar ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -41,6 +43,7 @@
   background-color: #f2f2f2;
   text-align: center;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .banner .name {
@@ -54,11 +57,52 @@
   color: #666;
 }
 
+.about-us,
+.about-experience {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h1,
+.about-experience h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  font-size: 16px;
+  color: #666;
+}
+
+.about-experience-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.about-experience-list th,
+.about-experience-list td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.about-experience-list th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.about-experience-list td {
+  text-align: left;
+  font-size: 14px;
+}
+
 @media (min-width: 600px) {
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .navbar ul {
@@ -68,76 +112,20 @@
   .navbar ul li {
     margin-right: 10px;
     margin-bottom: 0;
+    background-color: black;
+  }
+
+  .about-us,
+  .about-experience {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .about-experience-list td {
+    font-size: 16px;
   }
 }
-
-.navbar-toggle {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.icon-bar {
-  background-color: #fff;
-  display: block;
-  height: 3px;
-  margin-bottom: 5px;
-  transition: background-color 0.3s ease-in-out;
-  width: 25px;
-}
-
-.icon-bar:last-child {
-  margin-bottom: 0;
-}
-
-.navbar-toggle.collapsed .icon-bar {
-  background-color: #fff;
-}
-
-.dropdown-menu {
-  background-color: #333;
-}
-
-.dropdown-menu li {
-  padding: 10px;
-}
-
-.dropdown-menu li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.dropdown-menu li a:hover {
-  color: #999;
-}
-
-/* Perubahan warna tampilan */
-body {
-  background-color: #f8f8f8;
-}
-
-.navbar {
-  background-color: #222;
-}
-
-.navbar ul li a {
-  color: #fff;
-}
-
-.banner {
-  background-color: #ddd;
-}
-
-.banner .name {
-  color: #333;
-}
-
-.banner .description {
-  color: #777;
-}
-
 
   </style>
 </head>
