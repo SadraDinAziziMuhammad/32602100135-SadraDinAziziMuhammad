@@ -35,7 +35,7 @@
 }
 
 .navbar ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -112,7 +112,6 @@
   .navbar ul li {
     margin-right: 10px;
     margin-bottom: 0;
-    background-color: black;
   }
 
   .about-us,
@@ -166,6 +165,7 @@
       Mahasiswa Fakultas Teknologi Industri, Jurusan Teknik Informatika
     </span>
   </div>
+  <br>
   <?= $this->renderSection('content') ?>
 </body>
 

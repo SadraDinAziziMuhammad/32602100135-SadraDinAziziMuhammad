@@ -7,6 +7,7 @@
     <h1>About Us</h1>
     <p>An undergraduate student at the Faculty of Industrial Technology, majoring in Informatics Engineering from the Islamic University of Sultan Agung Semarang</p>
   </div>
+  <br>
   <div class="about-experience">
     <h1>Experience</h1>
     <div class="about-experience-list">
