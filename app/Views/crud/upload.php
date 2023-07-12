@@ -6,7 +6,7 @@
         <h1>Tambah Data Mahasiswa</h1>
     </div>
     <div class="form">
-        <form action="tambah" method="post">
+        <form action="Tambah" method="post">
             <div class="input">
                 <label for="nim">Nim</label>
                 <input type="text" name="nim" id="nim">

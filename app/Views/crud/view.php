@@ -4,7 +4,7 @@
 <main>
     <div class="tittle">
         <h1>Data Mahasiswa</h1>
-        <a href="Crud/tambah"><button>Tambah Data</button></a>
+        <a href="crud/tambah"><button>Tambah Data</button></a>
     </div>
     <div class="table">
         <table border="1" cellspacing="0" cellpadding="10">
@@ -34,7 +34,7 @@
                         <td><?= $a['universitas']; ?></td>
                         <td><?= $a['no_hp']; ?></td>
                         <td class="action">
-                            <a href="crud/hapus/<?= $a['nim']; ?>"><button class="btn-delete" onclick="return confirm('Are You Sure to Delete Nim <?= $a['nim'] ?>')">Delete</button></a>
+                            <a href="#"><button class="btn-delete">Delete</button></a>
                             <a href="crud/edit/<?= $a['nim']; ?>"><button class="btn-update">Update</button></a>
                         </td>
                     </tr>

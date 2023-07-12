@@ -26,24 +26,16 @@ class Crud extends BaseController
         if (isset($_POST['nim'])) {
 
             $nim = $_POST['nim'];
-            $nama = $_POST['nama'];
-            $prodi = $_POST['prodi'];
-            $universitas = $_POST['universitas'];
-            $no_hp = $_POST['no_hp'];
+            
 
             $upload = [
                 'nim' => $nim,
-                'nama' => $nama,
-                'prodi' => $prodi,
-                'universitas' => $universitas,
-                'no_hp' => $no_hp
             ];
 
             $this->db->insert($upload);
 
             return redirect()->to(base_url('/crud'));
         } else {
-
             return view('crud/upload');
         }
     }
